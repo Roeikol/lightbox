@@ -1,13 +1,17 @@
 body{
 	margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background: #384047;
 }
 
 header{
 	display: flex;
 	margin: 30px 0;
 }
-header h1{margin: auto;}
+header h1{
+	margin: auto;
+	color: #fff;
+}
 
 main{display: flex;}
 
@@ -39,26 +43,29 @@ main{display: flex;}
 	padding-right: 0;
 }
 #view_port{
-	display: flex;
 	position: fixed;
 	top:0;
 	left:0;
 	height: 100%;
 	width: 100%;
 	background: rgba(0, 0, 0, 0.9);
-	display: none;
+	display: none
 }
 
 #img_container{
 	display: flex;
 	flex-direction: column;
-	margin: 100px;
+	width: 50%;
+	height:70%;
+	margin:5% auto;
 }
-#img_container img{
-	width: 100%;
+#img_container .big_image{
+	max-width:100%;
+	max-height:100%;
     height: auto;
+    border: solid white 7px;
 }
 #img_container p{
-	margin: auto;
+	margin: 1rem auto;
 	color: white;
 }
