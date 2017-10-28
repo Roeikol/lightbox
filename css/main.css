@@ -1,27 +1,36 @@
+html{  
+	height: 100%;
+ }
 body{
 	margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #384047;
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	background: #ffffff;
 }
-
+#all-site-warp{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 header{
 	display: flex;
 	margin: 30px 0;
 }
 header h1{
 	margin: auto;
-	color: #fff;
+	color: #323232;
 }
 
-main{display: flex;}
+main{
+	display: flex;
+	height: 50vh;
+}
 
 #gallery_wrapper{
 	display: flex;
 	margin: auto;
 	width: 50%;
-	align-items: center;
 }
-
 #gallery{
 	display: flex;
 	justify-content: space-between;
@@ -33,11 +42,13 @@ main{display: flex;}
 	font-size: 30px;
 	cursor: pointer;
 	user-select: none;
+	align-self: center;
 }
 #gallery img{
 	width: 150px;
 	height: 100px;
 	padding-right: 1rem;
+	cursor: pointer;
 }
 #gallery a:last-child img{
 	padding-right: 0;
@@ -51,7 +62,6 @@ main{display: flex;}
 	background: rgba(0, 0, 0, 0.9);
 	display: none
 }
-
 #img_container{
 	display: flex;
 	flex-direction: column;
@@ -59,7 +69,7 @@ main{display: flex;}
 	height:70%;
 	margin:5% auto;
 }
-#img_container .big_image{
+#img_container .large_image{
 	max-width:100%;
 	max-height:100%;
     height: auto;
