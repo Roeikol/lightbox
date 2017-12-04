@@ -1,2 +1,2 @@
 # lightbox - photo gallery
-Live version - https://roeiko.github.io/lightbox/
+Live version - https://roeikol.github.io/lightbox/
